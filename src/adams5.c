@@ -50,6 +50,7 @@ error:
 void Adams5FreeData(a5_data *data){
   if(data){
     free(data->f);
+    free(data->dy);
     free(data->funcs);
     free(data->y);
     free(data);
